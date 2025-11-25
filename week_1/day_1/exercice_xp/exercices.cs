@@ -106,3 +106,60 @@ using System;
         }
     }
 }*/
+
+//Exercice 8: Temperature Converter
+/*class Exercise8
+{
+    static double CelsiusToFahrenheit(double celsius)
+    {
+        return (celsius * 9 / 5) + 32;
+    }
+
+    static void Main(string[] args)
+    {
+        double celsius;
+        Console.Write("Enter temperature in Celsius: ");
+        celsius = Convert.ToDouble(Console.ReadLine());
+        double fahrenheit = CelsiusToFahrenheit(celsius);
+        Console.WriteLine($"{celsius}°C is equal to {fahrenheit}°F.");
+    }
+}*/
+
+//Exercice 9: Number Swapper
+/*class Exercise9
+{
+    static void NumbersSwapper(ref int a, ref int b)
+    {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+
+    static void Main(string[] args)
+    {
+        int num1 = 5;
+        int num2 = 10;
+        Console.WriteLine($"Before Swap: num1 = {num1}, num2 = {num2}");
+        NumbersSwapper(ref num1, ref num2);
+        Console.WriteLine($"After Swap: num1 = {num1}, num2 = {num2}");
+    }
+}*/
+//Exercice 10: Simple Multiplication Table
+/*class Exercise10
+{
+    static void PrintMultiplicationTable(int number)
+    {
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"{number} x {i} = {number * i}");
+        }
+    }
+
+    static void Main(string[] args)
+    {
+        int num;
+        Console.Write("Enter a number to display its multiplication table: ");
+        num = Convert.ToInt32(Console.ReadLine());
+        PrintMultiplicationTable(num);
+    }
+}*/
