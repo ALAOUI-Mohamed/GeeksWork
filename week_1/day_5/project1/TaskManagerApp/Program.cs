@@ -29,6 +29,31 @@ namespace TaskManagerApp
             Console.WriteLine("\nTask added! Press Enter to return.");
             Console.ReadLine();
         }
+
+        static void ViewTasks()
+        {
+            Console.Clear();
+
+            if (tasks.Count == 0)
+            {
+                Console.WriteLine("No tasks found.");
+            }
+            else
+            {
+                int index = 1;
+                foreach (var task in tasks)
+                {
+                    Console.WriteLine($"Task #{index}");
+                    Console.WriteLine(task);
+                    Console.WriteLine("------------------------");
+                    index++;
+                }
+            }
+
+            Console.WriteLine("\nPress Enter to return.");
+            Console.ReadLine();
+        }
+
         static void Main(string[] args)
         {
             bool running = true;
@@ -52,6 +77,7 @@ namespace TaskManagerApp
                         AddTask();
                         break;
                     case "2":
+                        ViewTasks();
                         break;
                     case "3":
                         break;
