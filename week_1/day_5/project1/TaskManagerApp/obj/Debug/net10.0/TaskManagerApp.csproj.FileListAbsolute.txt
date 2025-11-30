@@ -1,0 +1,15 @@
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\bin\Debug\net10.0\TaskManagerApp.exe
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\bin\Debug\net10.0\TaskManagerApp.deps.json
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\bin\Debug\net10.0\TaskManagerApp.runtimeconfig.json
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\bin\Debug\net10.0\TaskManagerApp.dll
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\bin\Debug\net10.0\TaskManagerApp.pdb
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\obj\Debug\net10.0\TaskManagerApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\obj\Debug\net10.0\TaskManagerApp.AssemblyInfoInputs.cache
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\obj\Debug\net10.0\TaskManagerApp.AssemblyInfo.cs
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\obj\Debug\net10.0\TaskManagerApp.csproj.CoreCompileInputs.cache
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\obj\Debug\net10.0\TaskManagerApp.sourcelink.json
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\obj\Debug\net10.0\TaskManagerApp.dll
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\obj\Debug\net10.0\refint\TaskManagerApp.dll
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\obj\Debug\net10.0\TaskManagerApp.pdb
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\obj\Debug\net10.0\TaskManagerApp.genruntimeconfig.cache
+D:\GameDev\Projects\BootCampEx\week_1\day_5\project1\TaskManagerApp\obj\Debug\net10.0\ref\TaskManagerApp.dll
