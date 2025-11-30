@@ -54,6 +54,34 @@ namespace TaskManagerApp
             Console.ReadLine();
         }
 
+        static void UpdateTaskStatus()
+        {
+            Console.Clear();
+            ViewTasks();
+
+            if (tasks.Count == 0)
+                return;
+
+            Console.Write("Enter task number to update: ");
+
+            if (int.TryParse(Console.ReadLine(), out int number) &&
+                number >= 1 && number <= tasks.Count)
+            {
+                var task = tasks[number - 1];
+                task.Status = task.Status == "Pending" ? "Completed" : "Pending";
+
+                Console.WriteLine("Task status updated!");
+            }
+            else
+            {
+                Console.WriteLine("Invalid task number.");
+            }
+
+            Console.WriteLine("\nPress Enter to return.");
+            Console.ReadLine();
+        }
+
+
         static void Main(string[] args)
         {
             bool running = true;
@@ -80,6 +108,7 @@ namespace TaskManagerApp
                         ViewTasks();
                         break;
                     case "3":
+                        UpdateTaskStatus();
                         break;
                     case "4":
                         break;
