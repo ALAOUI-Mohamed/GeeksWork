@@ -81,7 +81,34 @@ namespace TaskManagerApp
             Console.ReadLine();
         }
 
+        static void DeleteTask()
+        {
+            Console.Clear();
+            ViewTasks();
 
+            if (tasks.Count == 0)
+                return;
+
+            Console.Write("Enter task number to delete: ");
+
+            if (int.TryParse(Console.ReadLine(), out int number) &&
+                number >= 1 && number <= tasks.Count)
+            {
+                Console.Write("Are you sure? (y/n): ");
+                if (Console.ReadLine().ToLower() == "y")
+                {
+                    tasks.RemoveAt(number - 1);
+                    Console.WriteLine("Task deleted.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid task number.");
+            }
+
+            Console.WriteLine("\nPress Enter to return.");
+            Console.ReadLine();
+        }
         static void Main(string[] args)
         {
             bool running = true;
@@ -111,6 +138,7 @@ namespace TaskManagerApp
                         UpdateTaskStatus();
                         break;
                     case "4":
+                        DeleteTask();
                         break;
                     case "5":
                         running = false;
