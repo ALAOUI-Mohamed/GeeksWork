@@ -143,6 +143,7 @@ namespace TaskManagerApp
                     case "5":
                         running = false;
                         break;
+                        
                 }
             }
         }
