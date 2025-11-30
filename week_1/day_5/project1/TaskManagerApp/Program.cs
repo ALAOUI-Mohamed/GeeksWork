@@ -1,9 +1,34 @@
-﻿﻿using System;
+﻿using System;
+using System.Collections.Generic;
+
 
 namespace TaskManagerApp
 {
     class Program
     {
+        static List<TaskItem> tasks = new List<TaskItem>();
+
+        static void AddTask()
+        {
+            Console.Clear();
+            Console.WriteLine("Add a New Task");
+
+            Console.Write("Enter title: ");
+            string title = Console.ReadLine();
+
+            Console.Write("Enter description: ");
+            string description = Console.ReadLine();
+
+            tasks.Add(new TaskItem
+            {
+                Title = title,
+                Description = description,
+                Status = "Pending"
+            });
+
+            Console.WriteLine("\nTask added! Press Enter to return.");
+            Console.ReadLine();
+        }
         static void Main(string[] args)
         {
             bool running = true;
@@ -24,6 +49,7 @@ namespace TaskManagerApp
                 switch (choice)
                 {
                     case "1":
+                        AddTask();
                         break;
                     case "2":
                         break;
