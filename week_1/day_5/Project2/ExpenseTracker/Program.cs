@@ -19,6 +19,7 @@ class Program
             Console.WriteLine("5. View Summary / Analysis");
             Console.WriteLine("6. Exit");
             Console.WriteLine("7. Filter by Category");
+            Console.WriteLine("8. Filter by Date Range");
             Console.Write("Select option: ");
 
             string input = Console.ReadLine();
@@ -52,6 +53,9 @@ class Program
                     return;
                 case "7":
                     FilterByCategory();
+                    break;
+                case "8":
+                    FilterByDateRange();
                     break;
 
                 default:
@@ -261,6 +265,58 @@ class Program
         if (filtered.Count == 0)
         {
             Console.WriteLine("\nNo transactions found for this category.");
+            Console.WriteLine("Press Enter to return...");
+            Console.ReadLine();
+            return;
+        }
+
+        Console.WriteLine("\nID | Title           | Amount      | Category       | Date");
+        Console.WriteLine("---------------------------------------------------------------");
+
+        foreach (var t in filtered)
+        {
+            if (t.Amount >= 0)
+                Console.ForegroundColor = ConsoleColor.Green;
+            else
+                Console.ForegroundColor = ConsoleColor.Red;
+
+            Console.WriteLine($"{t.Id,-3}| {t.Title,-15}| {t.Amount,-12}| {t.Category,-15}| {t.Date.ToShortDateString()}");
+
+            Console.ResetColor();
+        }
+
+        Console.WriteLine("\nPress Enter to return...");
+        Console.ReadLine();
+    }
+
+    static void FilterByDateRange()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Filter By Date Range ===");
+
+        Console.Write("Enter start date (yyyy-mm-dd): ");
+        if (!DateTime.TryParse(Console.ReadLine(), out DateTime startDate))
+        {
+            Console.WriteLine("Invalid start date.");
+            Console.ReadLine();
+            return;
+        }
+
+        Console.Write("Enter end date (yyyy-mm-dd): ");
+        if (!DateTime.TryParse(Console.ReadLine(), out DateTime endDate))
+        {
+            Console.WriteLine("Invalid end date.");
+            Console.ReadLine();
+            return;
+        }
+
+        var filtered = manager.GetAll()
+                              .Where(t => t.Date >= startDate && t.Date <= endDate)
+                              .ToList();
+
+        if (filtered.Count == 0)
+        {
+            Console.WriteLine("\nNo transactions found in this date range.");
             Console.WriteLine("Press Enter to return...");
             Console.ReadLine();
             return;
