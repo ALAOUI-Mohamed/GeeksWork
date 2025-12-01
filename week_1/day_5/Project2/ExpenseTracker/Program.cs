@@ -54,7 +54,30 @@ class Program
     }
 
     // Placeholder methods — we will fill these in Step 5
-    static void AddTransaction() { }
+    static void AddTransaction()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Add Transaction ===");
+
+        Console.Write("Title: ");
+        string title = Console.ReadLine();
+
+        Console.Write("Amount (positive for income, negative for expense): ");
+        decimal amount = decimal.Parse(Console.ReadLine());
+
+        Console.Write("Category: ");
+        string category = Console.ReadLine();
+
+        Console.Write("Date (yyyy-mm-dd): ");
+        DateTime date = DateTime.Parse(Console.ReadLine());
+
+        manager.AddTransaction(title, amount, category, date);
+
+        Console.WriteLine("\nTransaction added successfully!");
+        Console.WriteLine("Press Enter to return to menu...");
+        Console.ReadLine();
+    }
+
     static void ViewTransactions() { }
     static void UpdateTransaction() { }
     static void DeleteTransaction() { }
