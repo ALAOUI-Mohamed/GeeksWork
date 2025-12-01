@@ -158,6 +158,42 @@ class Program
         Console.WriteLine("Press Enter to return to menu...");
         Console.ReadLine();
     }
-    static void DeleteTransaction() { }
+    static void DeleteTransaction()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Delete Transaction ===");
+
+        Console.Write("Enter the transaction ID to delete: ");
+        if (!int.TryParse(Console.ReadLine(), out int id))
+        {
+            Console.WriteLine("Invalid ID.");
+            Console.ReadLine();
+            return;
+        }
+
+        var tr = manager.GetById(id);
+        if (tr == null)
+        {
+            Console.WriteLine("Transaction not found.");
+            Console.ReadLine();
+            return;
+        }
+
+        Console.WriteLine($"\nAre you sure you want to delete '{tr.Title}' (Y/N)?");
+        string confirm = Console.ReadLine().Trim().ToUpper();
+
+        if (confirm == "Y")
+        {
+            manager.DeleteTransaction(id);
+            Console.WriteLine("Transaction deleted successfully!");
+        }
+        else
+        {
+            Console.WriteLine("Delete canceled.");
+        }
+
+        Console.WriteLine("Press Enter to return to menu...");
+        Console.ReadLine();
+    }
     static void ViewSummary() { }
 }
