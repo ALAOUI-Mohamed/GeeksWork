@@ -18,6 +18,7 @@ class Program
             Console.WriteLine("4. Delete Transaction");
             Console.WriteLine("5. View Summary / Analysis");
             Console.WriteLine("6. Exit");
+            Console.WriteLine("7. Filter by Category");
             Console.Write("Select option: ");
 
             string input = Console.ReadLine();
@@ -49,7 +50,9 @@ class Program
                     DataStore.Save(manager.GetAll());
                     Console.WriteLine("Transactions saved. Goodbye!");
                     return;
-
+                case "7":
+                    FilterByCategory();
+                    break;
 
                 default:
                     Console.WriteLine("Invalid option. Press Enter to continue.");
@@ -240,6 +243,45 @@ class Program
         }
 
         Console.WriteLine("\nPress Enter to return to menu...");
+        Console.ReadLine();
+    }
+
+    static void FilterByCategory()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Filter By Category ===");
+        Console.Write("Enter category name: ");
+
+        string category = Console.ReadLine();
+
+        var filtered = manager.GetAll()
+                              .Where(t => t.Category.Equals(category, StringComparison.OrdinalIgnoreCase))
+                              .ToList();
+
+        if (filtered.Count == 0)
+        {
+            Console.WriteLine("\nNo transactions found for this category.");
+            Console.WriteLine("Press Enter to return...");
+            Console.ReadLine();
+            return;
+        }
+
+        Console.WriteLine("\nID | Title           | Amount      | Category       | Date");
+        Console.WriteLine("---------------------------------------------------------------");
+
+        foreach (var t in filtered)
+        {
+            if (t.Amount >= 0)
+                Console.ForegroundColor = ConsoleColor.Green;
+            else
+                Console.ForegroundColor = ConsoleColor.Red;
+
+            Console.WriteLine($"{t.Id,-3}| {t.Title,-15}| {t.Amount,-12}| {t.Category,-15}| {t.Date.ToShortDateString()}");
+
+            Console.ResetColor();
+        }
+
+        Console.WriteLine("\nPress Enter to return...");
         Console.ReadLine();
     }
 
