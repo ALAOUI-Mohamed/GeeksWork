@@ -21,6 +21,7 @@ class Program
             Console.WriteLine("7. Filter by Category");
             Console.WriteLine("8. Filter by Date Range");
             Console.WriteLine("9. Sort Transactions");
+            Console.WriteLine("10. Export Summary Report");
 
             Console.Write("Select option: ");
 
@@ -53,15 +54,23 @@ class Program
                     DataStore.Save(manager.GetAll());
                     Console.WriteLine("Transactions saved. Goodbye!");
                     return;
+
                 case "7":
                     FilterByCategory();
                     break;
+
                 case "8":
                     FilterByDateRange();
                     break;
+
                 case "9":
                     SortTransactions();
                     break;
+
+                case "10":
+                    ExportSummaryReport();
+                    break;
+
 
                 default:
                     Console.WriteLine("Invalid option. Press Enter to continue.");
@@ -406,6 +415,50 @@ class Program
         }
 
         Console.WriteLine("\nPress Enter to return...");
+        Console.ReadLine();
+    }
+
+    static void ExportSummaryReport()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Export Summary Report ===\n");
+
+        string fileName = "summary_report.txt";
+
+        decimal totalIncome = manager.TotalIncome();
+        decimal totalExpenses = manager.TotalExpenses();
+        decimal balance = manager.Balance();
+        var grouped = manager.ExpensesByCategory();
+
+        using (StreamWriter writer = new StreamWriter(fileName))
+        {
+            writer.WriteLine("=== Summary Report ===");
+            writer.WriteLine();
+            writer.WriteLine($"Total Income:  {totalIncome:C}");
+            writer.WriteLine($"Total Expenses:{totalExpenses:C}");
+            writer.WriteLine($"Balance:       {balance:C}");
+            writer.WriteLine();
+            writer.WriteLine("Expenses by Category:");
+
+            if (!grouped.Any())
+            {
+                writer.WriteLine("No expense transactions found.");
+            }
+            else
+            {
+                foreach (var grp in grouped)
+                {
+                    decimal sum = grp.Sum(t => Math.Abs(t.Amount));
+                    writer.WriteLine($"{grp.Key}: {sum:C}");
+                }
+            }
+
+            writer.WriteLine();
+            writer.WriteLine("Report generated on: " + DateTime.Now);
+        }
+
+        Console.WriteLine($"Summary exported successfully to '{fileName}'!");
+        Console.WriteLine("Press Enter to return to menu...");
         Console.ReadLine();
     }
 
