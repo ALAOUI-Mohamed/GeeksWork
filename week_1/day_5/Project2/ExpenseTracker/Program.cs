@@ -195,5 +195,37 @@ class Program
         Console.WriteLine("Press Enter to return to menu...");
         Console.ReadLine();
     }
-    static void ViewSummary() { }
+    static void ViewSummary()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Summary / Analysis ===\n");
+
+        decimal totalIncome = manager.TotalIncome();
+        decimal totalExpenses = manager.TotalExpenses();
+        decimal balance = manager.Balance();
+
+        Console.WriteLine($"Total Income:  {totalIncome:C}");
+        Console.WriteLine($"Total Expenses:{totalExpenses:C}");
+        Console.WriteLine($"Balance:       {balance:C}\n");
+
+        Console.WriteLine("Expenses by Category:");
+        var grouped = manager.ExpensesByCategory();
+
+        if (!grouped.Any())
+        {
+            Console.WriteLine("No expense transactions found.");
+        }
+        else
+        {
+            foreach (var grp in grouped)
+            {
+                decimal sum = grp.Sum(t => Math.Abs(t.Amount));
+                Console.WriteLine($"{grp.Key}: {sum:C}");
+            }
+        }
+
+        Console.WriteLine("\nPress Enter to return to menu...");
+        Console.ReadLine();
+    }
+
 }
