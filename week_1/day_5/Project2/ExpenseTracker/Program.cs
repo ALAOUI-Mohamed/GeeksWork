@@ -22,6 +22,7 @@ class Program
             Console.WriteLine("8. Filter by Date Range");
             Console.WriteLine("9. Sort Transactions");
             Console.WriteLine("10. Export Summary Report");
+            Console.WriteLine("11. Show Recent Transactions (Last 7 Days)");
 
             Console.Write("Select option: ");
 
@@ -69,6 +70,10 @@ class Program
 
                 case "10":
                     ExportSummaryReport();
+                    break;
+
+                case "11":
+                    ShowRecentTransactions();
                     break;
 
 
@@ -459,6 +464,46 @@ class Program
 
         Console.WriteLine($"Summary exported successfully to '{fileName}'!");
         Console.WriteLine("Press Enter to return to menu...");
+        Console.ReadLine();
+    }
+
+    static void ShowRecentTransactions()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Recent Transactions (Last 7 Days) ===\n");
+
+        DateTime endDate = DateTime.Now;
+        DateTime startDate = endDate.AddDays(-7);
+
+        var recent = manager.GetAll()
+                            .Where(t => t.Date >= startDate && t.Date <= endDate)
+                            .OrderByDescending(t => t.Date)
+                            .ToList();
+
+        if (recent.Count == 0)
+        {
+            Console.WriteLine("No transactions found in the last 7 days.");
+            Console.WriteLine("Press Enter to return…");
+            Console.ReadLine();
+            return;
+        }
+
+        Console.WriteLine("ID | Title           | Amount      | Category       | Date");
+        Console.WriteLine("---------------------------------------------------------------");
+
+        foreach (var t in recent)
+        {
+            if (t.Amount >= 0)
+                Console.ForegroundColor = ConsoleColor.Green;
+            else
+                Console.ForegroundColor = ConsoleColor.Red;
+
+            Console.WriteLine($"{t.Id,-3}| {t.Title,-15}| {t.Amount,-12}| {t.Category,-15}| {t.Date.ToShortDateString()}");
+
+            Console.ResetColor();
+        }
+
+        Console.WriteLine("\nPress Enter to return…");
         Console.ReadLine();
     }
 
