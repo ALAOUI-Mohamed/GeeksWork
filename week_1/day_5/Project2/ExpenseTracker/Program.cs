@@ -78,7 +78,33 @@ class Program
         Console.ReadLine();
     }
 
-    static void ViewTransactions() { }
+    static void ViewTransactions()
+    {
+        Console.Clear();
+        Console.WriteLine("=== All Transactions ===\n");
+
+        var list = manager.GetAll();
+
+        if (list.Count == 0)
+        {
+            Console.WriteLine("No transactions found.");
+            Console.WriteLine("\nPress Enter to return to menu...");
+            Console.ReadLine();
+            return;
+        }
+
+        Console.WriteLine("ID | Title           | Amount      | Category       | Date");
+        Console.WriteLine("---------------------------------------------------------------");
+
+        foreach (var t in list)
+        {
+            Console.WriteLine($"{t.Id,-3}| {t.Title,-15}| {t.Amount,-12}| {t.Category,-15}| {t.Date.ToShortDateString()}");
+        }
+
+        Console.WriteLine("\nPress Enter to return to menu...");
+        Console.ReadLine();
+    }
+
     static void UpdateTransaction() { }
     static void DeleteTransaction() { }
     static void ViewSummary() { }
