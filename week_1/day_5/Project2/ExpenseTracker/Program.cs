@@ -6,6 +6,8 @@ class Program
 
     static void Main()
     {
+        // Load transactions from file at start
+        manager.Load(DataStore.Load());
         while (true)
         {
             Console.Clear();
@@ -43,7 +45,11 @@ class Program
                     break;
 
                 case "6":
+                    // Save transactions to file
+                    DataStore.Save(manager.GetAll());
+                    Console.WriteLine("Transactions saved. Goodbye!");
                     return;
+
 
                 default:
                     Console.WriteLine("Invalid option. Press Enter to continue.");
@@ -98,7 +104,16 @@ class Program
 
         foreach (var t in list)
         {
-            Console.WriteLine($"{t.Id,-3}| {t.Title,-15}| {t.Amount,-12}| {t.Category,-15}| {t.Date.ToShortDateString()}");
+            if (t.Amount >= 0)
+                Console.ForegroundColor = ConsoleColor.Green;   // income = green
+            else
+                Console.ForegroundColor = ConsoleColor.Red;     // expense = red
+
+            Console.WriteLine(
+                $"{t.Id,-3}| {t.Title,-15}| {t.Amount,-12}| {t.Category,-15}| {t.Date.ToShortDateString()}"
+            );
+
+            Console.ResetColor();
         }
 
         Console.WriteLine("\nPress Enter to return to menu...");
