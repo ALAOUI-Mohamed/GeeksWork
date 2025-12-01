@@ -20,6 +20,8 @@ class Program
             Console.WriteLine("6. Exit");
             Console.WriteLine("7. Filter by Category");
             Console.WriteLine("8. Filter by Date Range");
+            Console.WriteLine("9. Sort Transactions");
+
             Console.Write("Select option: ");
 
             string input = Console.ReadLine();
@@ -56,6 +58,9 @@ class Program
                     break;
                 case "8":
                     FilterByDateRange();
+                    break;
+                case "9":
+                    SortTransactions();
                     break;
 
                 default:
@@ -326,6 +331,69 @@ class Program
         Console.WriteLine("---------------------------------------------------------------");
 
         foreach (var t in filtered)
+        {
+            if (t.Amount >= 0)
+                Console.ForegroundColor = ConsoleColor.Green;
+            else
+                Console.ForegroundColor = ConsoleColor.Red;
+
+            Console.WriteLine($"{t.Id,-3}| {t.Title,-15}| {t.Amount,-12}| {t.Category,-15}| {t.Date.ToShortDateString()}");
+
+            Console.ResetColor();
+        }
+
+        Console.WriteLine("\nPress Enter to return...");
+        Console.ReadLine();
+    }
+
+    static void SortTransactions()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Sort Transactions ===");
+        Console.WriteLine("1. Sort by Date (Newest first)");
+        Console.WriteLine("2. Sort by Date (Oldest first)");
+        Console.WriteLine("3. Sort by Amount (Highest first)");
+        Console.WriteLine("4. Sort by Amount (Lowest first)");
+        Console.Write("Choose sorting option: ");
+
+        string choice = Console.ReadLine();
+        var list = manager.GetAll();
+
+        if (list.Count == 0)
+        {
+            Console.WriteLine("No transactions available.");
+            Console.ReadLine();
+            return;
+        }
+
+        List<Transaction> sorted = new List<Transaction>();
+
+        switch (choice)
+        {
+            case "1":
+                sorted = list.OrderByDescending(t => t.Date).ToList();
+                break;
+            case "2":
+                sorted = list.OrderBy(t => t.Date).ToList();
+                break;
+            case "3":
+                sorted = list.OrderByDescending(t => t.Amount).ToList();
+                break;
+            case "4":
+                sorted = list.OrderBy(t => t.Amount).ToList();
+                break;
+            default:
+                Console.WriteLine("Invalid choice.");
+                Console.ReadLine();
+                return;
+        }
+
+        Console.Clear();
+        Console.WriteLine("=== Sorted Results ===\n");
+        Console.WriteLine("ID | Title           | Amount      | Category       | Date");
+        Console.WriteLine("---------------------------------------------------------------");
+
+        foreach (var t in sorted)
         {
             if (t.Amount >= 0)
                 Console.ForegroundColor = ConsoleColor.Green;
