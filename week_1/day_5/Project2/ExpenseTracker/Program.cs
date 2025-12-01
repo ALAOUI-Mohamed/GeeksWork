@@ -105,7 +105,59 @@ class Program
         Console.ReadLine();
     }
 
-    static void UpdateTransaction() { }
+    static void UpdateTransaction()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Update Transaction ===");
+
+        Console.Write("Enter the transaction ID: ");
+        if (!int.TryParse(Console.ReadLine(), out int id))
+        {
+            Console.WriteLine("Invalid ID.");
+            Console.ReadLine();
+            return;
+        }
+
+        var tr = manager.GetById(id);
+        if (tr == null)
+        {
+            Console.WriteLine("Transaction not found.");
+            Console.ReadLine();
+            return;
+        }
+
+        Console.WriteLine("\nLeave a field empty to keep the current value.\n");
+
+        Console.WriteLine($"Current Title: {tr.Title}");
+        Console.Write("New Title: ");
+        string newTitle = Console.ReadLine();
+        if (!string.IsNullOrWhiteSpace(newTitle))
+            tr.Title = newTitle;
+
+        Console.WriteLine($"Current Amount: {tr.Amount}");
+        Console.Write("New Amount: ");
+        string newAmountInput = Console.ReadLine();
+        if (!string.IsNullOrWhiteSpace(newAmountInput) &&
+            decimal.TryParse(newAmountInput, out decimal newAmount))
+            tr.Amount = newAmount;
+
+        Console.WriteLine($"Current Category: {tr.Category}");
+        Console.Write("New Category: ");
+        string newCategory = Console.ReadLine();
+        if (!string.IsNullOrWhiteSpace(newCategory))
+            tr.Category = newCategory;
+
+        Console.WriteLine($"Current Date: {tr.Date.ToShortDateString()}");
+        Console.Write("New Date (yyyy-mm-dd): ");
+        string newDateInput = Console.ReadLine();
+        if (!string.IsNullOrWhiteSpace(newDateInput) &&
+            DateTime.TryParse(newDateInput, out DateTime newDate))
+            tr.Date = newDate;
+
+        Console.WriteLine("\nTransaction updated successfully!");
+        Console.WriteLine("Press Enter to return to menu...");
+        Console.ReadLine();
+    }
     static void DeleteTransaction() { }
     static void ViewSummary() { }
 }
