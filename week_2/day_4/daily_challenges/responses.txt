@@ -1,0 +1,65 @@
+1. Quick Reflection:
+Pick any real-life system (e.g., traffic, school, restaurant). Write 3 sentences describing how feedback loops might exist in it.
+
+Traffic Feedback Loops
+A Reinforcing Loop occurs when a driver sees heavy congestion ahead; they slow down, which causes the car behind them to slow down even more, and this effect quickly cascades backward, dramatically amplifying the initial slowdown into a full traffic jam.
+
+A Balancing Loop is enacted by a traffic light: if the sensor detects too many cars waiting on a side street, the light changes to green (the corrective action) to allow those cars to pass, thereby relieving the local pressure and stabilizing the flow across the intersection.
+
+A secondary Reinforcing Loop happens when navigation apps detect the heavy congestion and begin redirecting drivers onto alternate, smaller roads, causing those previously quiet streets to rapidly become overloaded, which shifts and amplifies the problem to a new area.
+
+2.Think of one unexpected behavior you’ve seen in a game (e.g., an exploit or creative solution). Explain briefly why it happened.
+
+Example: The Swing-Set Glitch (from games like Grand Theft Auto IV)
+
+Unexpected Behavior: Driving into certain non-destructible objects (like a swing set) causes the vehicle to be instantly and violently launched into the air. across the map at incredible speed, often killing the character instantly.
+
+Why it Happened: The game's physics engine calculated the force needed to resolve the collision but made an error. It believed the car and the object were overlapping so badly that it had to apply an enormous, runaway force to separate them, resulting in the car being shot away.
+
+3.List 3 systems from different games and classify each as simple, complicated, or complex.
+
+Classification	Game System	Game Example
+Simple		Health Meter	Super Mario Bros.
+
+Complicated	Talent/Skill	World of Warcraft (Classic)
+		Tree
+
+Complex		Weather & 	The Legend of Zelda: Breath of the Wild
+		Physics
+
+4.Choose any game system (e.g., health). Identify its source, stock, and sink in one short paragraph.
+League of Legends Health System
+The Source champion's default health + additional HP from items
+The Stock is the champion's current Health Points (HP)
+The Sink Taking Damage
+
+5.Name four resources that could be converted into something else in a crafting system (e.g., wood → plank).
+Meat = Food
+Stone = Wall
+Wood = Door
+Coal = Torch
+
+6.Pick a loop from any game (e.g., XP and leveling) and describe if it’s reinforcing or balancing.
+Soulframe reinforcing enemy level change only depending of the area not on ur lvl
+
+7.Imagine a system where players become overpowered too fast. Write one idea for introducing a balancing loop.
+dynamic Hp and Dmg depending on the lvl of the player
+
+8.Pick any game and describe how two of its systems influence each other (e.g., combat and economy).
+Minecraft
+System 1 Crafting & Tools
+System 2 Exploration & Resource System
+Better Exploration -> Better Resources -> Better Crafting -> Better Exploration
+
+9.Describe a surprising or unintended behavior you’ve seen in a game and what systems likely caused it.
+Valorant
+Cypher's Spycam could be equipped with his actual sidearm, turning the deployable camera into a lethal, remote-controlled turret that shot bullets instead of its intended tracking dart.
+
+after searching it in google i got this:
+Causing Systems:
+
+The Input/Equipment System: This system dictates the player's equip state and available weapon when pressing the fire key.
+
+The Ability System (Spycam): This system is supposed to take over the player's input when viewing the camera, replacing the main weapon fire with the camera's unique dart fire.
+
+Systemic Explanation: This glitch occurred due to a timing error or an unhandled state transition in the input systems. If the player performed a specific sequence of actions—such as dropping their pistol and quickly entering the camera view—the game's code briefly allowed the Ability System to correctly activate the camera's view, but the Input System failed to correctly switch the available attack input from the primary weapon to the tracking dart. The game ended up executing the standard Left Mouse Button function (firing the pistol) through the camera's interface.
