@@ -1,0 +1,31 @@
+In 3 lines, describe your game’s goal, rules, and core loop.
+Add 1 simple feedback (visual or sound) for a key action.
+Using the SCAMPER technique on your favorite game
+Put your ideation hat on! Put the SCAMPER technique to good use!
+
+League of Legends:
+Goal, Rules, and Core Loop
+
+Goal: Destroy the enemy "Nexus" located at the heart of their base while defending your own.
+Rules: Two teams of five players control unique champions, gaining power by defeating AI minions, monsters, and enemy players across three lanes.
+Core Loop: Kill units to earn gold and XP -> Purchase items and level up abilities -> Win teamfights and destroy defensive turrets to push toward the Nexus.
+
+Key Action Feedback
+Action: Last-hitting a minion.
+Feedback: A satisfying, metallic "clink" sound effect paired with bright gold text floating upward from the fallen unit.
+
+SCAMPER:
+
+Substitute: Replace Mana with Health for all champions—every spell cost now puts your life at risk.
+
+Combine: Merge two champions together into a Duo-Body (one player moves, the other aims the spells).
+
+Adapt: Add a Day/Night cycle from Dota; some champions get stronger or gain extra vision when the sun goes down.
+
+Modify: Change the Fog of War to be "Liquid"—you move slower when walking through areas you haven't scouted.
+
+Put to another use: Turn the map into a Racing Game where players use their dash abilities to finish laps while dodging turret fire.
+
+Eliminate: Remove Wards and Vision entirely—the map is pitch black unless you are standing right there.
+
+Reverse: Flip the Camera Angle to a third-person, over-the-shoulder view for a more "action-RPG" feel.
