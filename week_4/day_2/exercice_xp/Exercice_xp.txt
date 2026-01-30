@@ -1,0 +1,51 @@
+Section 1: History and Chronology
+Q1: The Crash and the Revival
+
+The 1983 Video Game Crash was caused by market oversaturation, poor-quality games, and loss of consumer trust. The industry was revived by Nintendo with the NES, introducing Mario as its mascot.
+
+Q2: Era Differentiation
+
+Golden Age of Arcades: Pac-Man — played in public arcades
+
+Modern 3D & Online Era: World of Warcraft — played in private spaces online
+Difference: public, physical social play vs. private, internet-based social play.
+
+Q3: The 16-bit Wars
+
+Companies/Consoles: Nintendo (SNES) and Sega (Genesis)
+
+PC games: Doom (FPS) and Civilization (Strategy)
+
+Section 2: Genre Classification & Evolution
+Q4: Genre Definitions
+
+Metroidvania: Exploration with ability-based progression — Super Metroid
+
+JRPG: Story-driven RPG with turn-based combat — Final Fantasy VII
+
+RTS: Real-time unit and resource control — StarCraft
+
+Q5: Roguelike vs Roguelite
+
+Roguelikes reset progress on death. Roguelites keep permanent upgrades between runs (Hades).
+
+Q6: Souls-like
+
+Defining game: Demon’s Souls
+
+Core elements: High-difficulty combat and interconnected world with death penalties
+
+Section 3: Influence and Key Titles
+Q7: 3D & Open Worlds
+
+3D graphics enabled large explorable worlds. Key title: GTA III.
+
+Q8: Modding & New Genres
+
+The MOBA genre came from Warcraft III mods (DotA).
+
+Q9: Pillars of Gaming
+
+Tetris: Skill-based, universal design
+
+Ocarina of Time: 3D world design and storytelling
