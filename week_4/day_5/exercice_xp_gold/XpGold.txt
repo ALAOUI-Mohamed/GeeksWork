@@ -1,0 +1,158 @@
+Mini Game Production Project
+Part 1: Game Concept & Pre-Production (30%)
+High Concept Statement
+
+Echo Step is a short 2D puzzle-platformer where the player creates temporary “echoes” of their past movements to solve traversal challenges. The core mechanic focuses on timing and spatial planning rather than reflex-heavy action. The game targets casual-to-midcore players who enjoy thoughtful puzzle games like Braid or The Swapper.
+
+Mini Game Design Document (Mini GDD)
+
+Genre
+2D Puzzle Platformer
+
+Core Mechanics
+
+Player movement: run, jump
+
+“Echo” ability: records the player’s movement for a few seconds and replays it as a ghost character
+
+Echoes can activate switches, block hazards, or act as temporary platforms
+
+Core Gameplay Loop
+
+Player explores a small level
+
+Encounters an obstacle that cannot be solved alone
+
+Records an echo and replays it
+
+Uses coordination between player and echo to progress
+
+Reaches goal and moves to next level
+
+Level / Environment Ideas
+
+Minimalist rooms with platforms, pressure plates, spikes, and doors
+
+Levels gradually introduce tighter timing and multiple echoes
+
+Single-screen or small scrolling levels to keep scope limited
+
+Key Assets
+
+Visual: player sprite, echo sprite (transparent variant), platforms, hazards, switches
+
+Audio: jump sound, echo activation sound, ambient background music
+
+UI: restart button, echo timer indicator
+
+Art Direction
+
+Simple, abstract pixel art
+
+Muted color palette with bright highlights for interactive objects
+
+Echo character visually distinct through transparency or glow
+
+Pipeline Plan (Text-Based Flowchart)
+
+Pre-Production
+
+Concept & GDD → Scope definition → Core mechanic planning
+Roles:
+
+Designer (mechanics, levels)
+
+Producer (scope, schedule)
+
+Production
+
+Prototype core mechanic
+
+Build 2–3 test levels
+
+Implement basic visuals and audio
+Roles:
+
+Programmer (movement, echo system)
+
+Artist (sprites, UI)
+
+Audio (basic SFX)
+
+Post-Production
+
+Playtesting
+
+Bug fixing
+
+Reflection & documentation
+Roles:
+
+QA (testing, feedback)
+
+Producer (final review)
+
+Part 2: Rapid Prototyping & Iteration (25%)
+Prototype
+
+A digital prototype was created in Unity featuring:
+
+Player movement
+
+Echo recording and playback
+
+One test level using a pressure plate and door
+
+Playtest & Feedback
+
+Playtester Feedback:
+The echo mechanic was interesting, but it was unclear when the echo was recording and how long it lasted.
+
+Iteration & Reflection
+
+To address this, a visible timer bar was added during echo recording, and the echo sprite briefly flashes before playback starts. This change improved clarity and reduced player confusion without altering the core mechanic.
+
+Part 3: Team Structure & Collaboration Simulation (20%)
+Team Roles (Simulated Solo Team)
+
+Designer: Defines mechanics, levels, and player experience
+
+Programmer: Implements movement, echo system, and interactions
+
+Artist: Creates sprites, UI, and visual feedback
+
+Audio Designer: Adds sound effects and ambient audio
+
+Producer: Manages scope, deadlines, and task priorities
+
+QA Tester: Playtests and reports issues
+
+Each role is necessary to simulate real production dependencies and highlight how tasks overlap in small teams.
+
+Workflow Simulation
+
+Tasks were organized on a simple task board with columns for To Do, In Progress, and Done. The producer role reviews progress weekly, while QA feedback informs design and programming changes. Communication flows from QA → Designer/Programmer → Producer for final decisions.
+
+Part 4: Post-Mortem & Reflection (25%)
+Self-Evaluation
+
+The strongest part of production was pre-production, as defining a limited scope prevented feature creep. The biggest challenge was balancing mechanic clarity with simplicity. Production was the most critical phase because small implementation issues had a large impact on player understanding.
+
+Team Evaluation (Simulated)
+
+Each role contributed to maintaining structure and focus. In a real team, clearer communication between design and programming—especially earlier playtesting—would improve iteration speed and reduce rework.
+
+Lessons Learned & Next Steps
+
+Key Lesson:
+Clear visual feedback is essential when introducing a new mechanic.
+
+Improvement for Full Production:
+Introduce a short tutorial level that teaches the echo mechanic step-by-step.
+
+Next Feature to Expand:
+Allow multiple echoes at once, increasing puzzle complexity and strategic depth.
+
+Lessons Learned Summary
+
+This project demonstrated how even small games benefit from structured pipelines, defined roles, and early playtesting. Iteration based on feedback was critical to improving player experience, reinforcing the importance of rapid prototyping in game production.
