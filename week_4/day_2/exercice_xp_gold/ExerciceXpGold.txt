@@ -1,0 +1,44 @@
+Section 1: Interconnected Histories & Paradigms
+Question 1: The Cyclical Nature of Innovation & Industry Crises
+
+The 1983 Video Game Crash had a lasting impact on how the game industry operates. Caused by market oversaturation and poor-quality control, the crash led Nintendo to impose strict licensing rules and approval processes when launching the NES. These practices restored consumer trust but also shaped future industry trends in ways that both helped and harmed later generations of developers.
+
+One major legacy of this system was strong platform control. Nintendo’s licensing model centralized power with console manufacturers, making it difficult for small developers to enter the market. While this stabilized the industry in the short term, it contributed to long-term barriers that persisted into the 1990s and 2000s. The rise of digital distribution and the indie boom can be seen as a response to this structure, as platforms like Steam reduced manufacturing costs and allowed developers to self-publish without traditional gatekeeping.
+
+Another consequence was how financial risk was handled. Nintendo’s model placed most risk on publishers and developers, encouraging tight deadlines and conservative design. This mindset carried forward into modern development practices and contributes to crunch culture, where labor absorbs production pressure. Live-service models attempt to reduce this risk by spreading revenue over time, echoing Nintendo’s original goal of market stability.
+
+Question 2: The Desktop vs. The Living Room
+
+During the 16-bit era, PC and console games developed very different design philosophies due to hardware and audience differences. PC games such as RTS titles and Western RPGs emphasized complexity, strategy, and player control. Mouse-and-keyboard input allowed for detailed interfaces, making games like StarCraft and Baldur’s Gate possible. PC players were often expected to invest time learning deep systems.
+
+Console games, by contrast, focused on accessibility and polish. Fixed hardware and gamepad controls encouraged intuitive mechanics and streamlined experiences. Platformers and JRPGs like Super Mario World and Final Fantasy VI prioritized pacing, audiovisual feedback, and narrative over systemic depth.
+
+These differences carried into the 2000s, influencing how genres evolved. While platforms eventually converged, many modern genres still reflect this early divide between complexity-driven and experience-driven design.
+
+Section 2: Genre Deconstruction & Emergence
+Question 3: Hybridization as a Driving Force
+
+Souls-like games combine Action RPG mechanics with survival-horror elements. From RPGs, they take progression systems and build customization; from survival genres, they borrow scarcity, tension, and punishment for failure. Mechanics like stamina management and corpse retrieval create a high-risk experience where player skill matters as much as character stats.
+
+Roguelites blend traditional roguelikes with fast-paced action games. While roguelikes emphasize procedural generation and permadeath, roguelites add meta-progression that persists between runs. Games like Hades turn failure into part of progression, creating a loop of experimentation that neither parent genre achieves alone.
+
+Question 4: Genre Definition vs. Player Experience
+
+Genres are often defined by mechanics, especially in cases like platformers or fighting games, where core actions are essential. Without jumping or combo systems, these genres lose their identity.
+
+However, player experience can be just as important. Games like Gone Home share mechanics with first-person shooters but aim for emotional storytelling rather than challenge. Immersive sims also resist strict mechanical definitions, as their focus is on player choice and experimentation.
+
+Overall, genres are shaped by both mechanics and experience, and modern games increasingly blur these boundaries.
+
+Section 3: Socio-Technological Symbiosis & Future Trajectories
+Question 5: The Feedback Loop of Influence (MOBA)
+
+The MOBA genre shows how community influence and business models shape each other. Originating as mods like Defense of the Ancients, MOBAs were built directly from player creativity. Esports and streaming further influenced design by emphasizing balance, clarity, and constant updates.
+
+Free-to-play and live-service models support this ecosystem by lowering entry barriers and funding ongoing development through cosmetics. As a result, MOBAs function as long-term platforms sustained by active communities rather than static products.
+
+Question 6: A “Pillar” for the Next Decade
+
+A potential future “key historical title” could be Echoes of Many, an AI-driven emergent narrative MMO. This game would combine immersive sim design with persistent online worlds, using advanced AI to generate dynamic NPCs and evolving storylines.
+
+By allowing player actions to permanently shape the game’s history, Echoes of Many would move beyond scripted narratives and redefine how stories function in games. Its impact would lie in treating games as living worlds rather than authored experiences, marking a major shift in game design philosophy.
