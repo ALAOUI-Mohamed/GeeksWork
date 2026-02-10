@@ -1,0 +1,172 @@
+Engine Prototype — Playable Digital Version (Unity)
+Core Gameplay
+
+Working Mechanic(s):
+
+Player movement using WASD
+
+Jumping using Space
+
+Collecting objects via trigger collisions
+
+Basic Game Rules:
+
+Start Condition:
+The game begins when the Unity scene loads and the player gains control immediately.
+
+Goal Condition:
+Collect all collectible objects in the level to complete the game.
+
+Fail / Restart Condition:
+If the player falls off the platform, they are reset to the starting position.
+
+Simple UI
+
+Unity UI Text (Canvas):
+
+“Collected: X / Y”
+
+“You Win!” message upon completion
+
+Debug text:
+
+“WASD to Move”
+
+“Space to Jump”
+
+Temporary Assets
+
+Unity primitives (Cube, Sphere, Plane)
+
+Default materials and colors
+
+No animations, sounds, or visual polish
+
+Deliverables
+
+Playable Build:
+Windows (.exe) build exported from Unity
+
+Short Video Demo (30–60 sec):
+Shows:
+
+Player movement and jumping
+
+Collecting objects
+
+Falling off and respawning
+
+Winning the level
+
+Design Change Log (3–5 Bullet Points)
+
+Reduced the number of collectibles
+→ Original count felt repetitive
+→ Improved pacing and clarity of the goal
+
+Adjusted jump force values
+→ Players struggled to reach platforms
+→ Jumping felt more responsive and fun
+
+Added on-screen instructions
+→ Testers didn’t immediately know the controls
+→ Improved onboarding
+
+Changed failure from game over to respawn
+→ Falling felt too punishing
+→ Encouraged experimentation
+
+Part 4 — Playtesting & Iteration
+Playtesting Setup
+
+Conducted two digital playtests
+
+Testers played the Unity build remotely
+
+Feedback gathered through observation and follow-up questions
+
+Insights Gathered from Testers (5–7)
+
+The goal wasn’t immediately clear at the start.
+
+Jumping was the most enjoyable part of the prototype.
+
+Falling off platforms felt frustrating initially.
+
+Platform spacing was sometimes hard to judge.
+
+Seeing collectible progress was motivating.
+
+The game felt short but easy to replay.
+
+Winning needed clearer feedback.
+
+Changes Applied & Why
+
+Added a collectible counter UI
+→ Made the goal and progress clearer
+
+Added player respawn instead of restarting the scene
+→ Reduced frustration
+
+Adjusted platform distances
+→ Improved readability and fairness
+
+Added a “You Win” UI message
+→ Gave clear completion feedback
+
+Changes Not Applied (with Justification)
+
+Did not add enemies or hazards
+→ Would increase complexity
+→ Outside the scope of a core-movement prototype
+
+Part 5 — Final Presentation (5–7 Minutes)
+1. Core Concept
+
+Title:
+“Jump Prototype” (rename if needed)
+
+Core Loop:
+Move → Jump → Collect → Avoid Falling → Complete Level
+
+Player Fantasy:
+“Feel like a nimble character navigating simple platform challenges.”
+
+2. Pipeline Overview
+
+➡️ Paper Prototype
+
+Sketched level layout and jump distances
+
+➡️ Blockout
+
+Grayboxed level using Unity cubes and planes
+
+➡️ Engine Prototype
+
+Implemented movement, jumping, and collecting in Unity
+
+➡️ Tester Feedback
+
+Identified confusion around goals and frustration points
+
+➡️ Final Iteration
+
+Added UI, tuned jump physics, adjusted level layout
+
+3. What You Learned
+
+What Surprised You:
+
+Small UI changes dramatically improved player understanding
+
+What Was the Hardest Part:
+
+Tuning jump physics to feel responsive
+
+What Would You Do Next:
+
+Add multiple levels
+
+Introduce a dash or moving platforms
