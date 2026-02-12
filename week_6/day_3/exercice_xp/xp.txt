@@ -1,0 +1,163 @@
+Scenario Context (Brief Restatement)
+
+Our team is developing a Unity playable prototype under a tight deadline. Challenges include unclear ownership of tasks, limited or avoided feedback, rising stress as deadlines approach, and a minor conflict impacting collaboration. The following exercises outline strategies to improve communication, feedback, stress management, and conflict resolution.
+
+Exercise 1: Communication & Role Clarity
+Objective
+
+Improve communication efficiency and clearly define team responsibilities to reduce confusion and rework.
+
+Team Roles & Responsibilities
+Role	Responsibilities	Primary Communication
+Designer	Defines core gameplay mechanics, level layout, and player experience	Daily chat, weekly meeting
+Programmer (Unity)	Implements movement, mechanics, UI, and bug fixes	Daily chat, documentation
+Artist (Placeholder)	Creates or selects temporary assets and materials	Chat, asset folder
+Producer / Team Lead	Tracks tasks, deadlines, and resolves blockers	Meetings, task board
+Communication Channels
+
+Discord / Slack:
+Daily communication, quick questions, progress updates
+
+Trello / Notion / Google Docs:
+Task tracking and documentation
+
+Weekly Team Meeting (15–30 min):
+Progress review, feedback, and planning
+
+Shared Drive / Git Repository:
+Version control and file organization
+
+Communication Plan
+
+Daily:
+
+Each member posts:
+
+What they worked on
+
+What they plan to do next
+
+Any blockers
+
+Weekly:
+
+Short meeting to:
+
+Review prototype progress
+
+Playtest the current build
+
+Assign tasks for the next sprint
+
+Deliverable Outcome:
+Clear ownership, fewer duplicated efforts, and improved accountability.
+
+Exercise 2: Feedback & Iteration
+Objective
+
+Create a structured, safe feedback process that improves the prototype without harming team morale.
+
+Feedback Framework
+
+Observation → Impact → Suggestion
+
+Observation: What was noticed (objective)
+
+Impact: How it affected gameplay or understanding
+
+Suggestion: A constructive improvement idea
+
+Example Constructive Feedback
+
+Observation:
+“The jump height feels inconsistent when moving between platforms.”
+
+Impact:
+“This made it harder to judge distances and caused frustration during playtesting.”
+
+Suggestion:
+“Consider increasing the jump force slightly or adjusting gravity values for consistency.”
+
+Feedback Process
+
+Feedback is given during scheduled playtest sessions.
+
+All feedback is documented in a shared document.
+
+The team discusses feedback together.
+
+The programmer implements agreed-upon changes.
+
+Changes are tested in the next build.
+
+Preventing Negative or Personal Feedback
+
+Focus on the feature, not the person
+
+Use neutral language and examples
+
+Encourage team members to ask clarifying questions
+
+Treat feedback as part of iteration, not criticism
+
+Deliverable Outcome:
+More productive discussions and faster improvement cycles.
+
+Exercise 3: Stress Management & Conflict Resolution
+Objective
+
+Reduce stress and resolve conflict to maintain healthy collaboration and productivity.
+
+Sources of Stress & Solutions
+1. Tight Deadlines
+
+Solutions:
+
+Break tasks into smaller, achievable goals
+
+Prioritize core features over polish
+
+2. Unclear Responsibilities
+
+Solutions:
+
+Assign clear task ownership
+
+Use a task board to track progress
+
+3. Fear of Giving Feedback
+
+Solutions:
+
+Normalize feedback as part of development
+
+Use structured feedback sessions instead of spontaneous criticism
+
+Conflict Scenario
+
+Scenario:
+A disagreement arises between the designer and programmer about whether to add a dash mechanic close to the deadline.
+
+Conflict Type
+
+Task Conflict (disagreement over feature scope)
+
+Conflict Resolution Strategy
+
+Identify the shared goal: delivering a stable prototype
+
+Evaluate time and technical constraints
+
+Decide whether the feature supports the core loop
+
+Defer non-essential features to a future iteration
+
+Leadership Behavior to Support the Team
+
+Encourage respectful discussion
+
+Keep decisions aligned with project goals
+
+Acknowledge stress and effort
+
+Step in early to prevent escalation

@@ -1,0 +1,88 @@
+Team Communication & Collaboration — Practical Exercise
+Scenario Analysis
+
+During the current prototype sprint, multiple issues emerged related to communication breakdowns, rising stress, and avoidance of feedback. The following analysis identifies key failures and proposes immediate, actionable solutions.
+
+1️⃣ Communication Audit
+Communication Failure 1
+
+Issue:
+A designer submitted a new feature without informing the developer team.
+
+Why This Is a Problem:
+This caused unexpected bugs, disrupted the sprint plan, and forced developers into reactive fixes instead of planned work.
+
+Immediate Improvement:
+Require all new features or changes to be announced in a shared channel and added to the task board before submission.
+
+Communication Failure 2
+
+Issue:
+Tasks are overlapping, and ownership is unclear.
+
+Why This Is a Problem:
+Developers are unsure who is responsible for what, increasing stress and the risk of duplicated or incomplete work.
+
+Immediate Improvement:
+Assign a single owner to each task and clearly label responsibilities in the sprint board.
+
+Communication Failure 3
+
+Issue:
+Team members avoid giving feedback to prevent conflict.
+
+Why This Is a Problem:
+Issues go unnoticed until late in the sprint, making fixes more stressful and damaging team trust.
+
+Immediate Improvement:
+Introduce short, structured feedback sessions at the end of each sprint.
+
+2️⃣ Feedback Exercise
+Constructive Feedback Using Observation → Impact → Suggestion
+
+Observation:
+“The new feature was added to the build without prior communication to the developer team.”
+
+Impact:
+“This caused unexpected bugs and delayed other sprint tasks.”
+
+Suggestion:
+“In the future, please post proposed features in the team channel and add them to the task board before implementation.”
+
+3️⃣ Stress & Collaboration Solution
+Main Stress Factor
+
+The developer is experiencing stress due to overlapping tasks and unclear priorities under tight deadlines.
+
+Practical Strategies to Reduce Stress
+
+Strategy 1: Task Prioritization
+
+Reconfirm sprint priorities
+
+Clearly mark tasks as critical vs optional
+
+Strategy 2: Clear Ownership
+
+Assign one owner per task
+
+Avoid parallel work on the same feature unless planned
+
+Team Leader Preventive Action
+
+The team leader should introduce a mandatory change-notification process, ensuring all feature additions or changes are reviewed and communicated before implementation. This prevents surprises and reduces last-minute stress.
+
+Optional Solution Flow (Text-Based)
+Feature Idea
+   ↓
+Team Notification
+   ↓
+Task Board Update
+   ↓
+Implementation
+   ↓
+Sprint Feedback
+
+Key Takeaway
+
+Quick, clear communication and structured feedback prevent small issues from becoming major problems. Proactive teams address problems early, protect morale, and maintain momentum—even under tight deadlines.
